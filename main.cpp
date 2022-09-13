@@ -15,8 +15,8 @@ int main()
         std::cout << "Ertek:"<<b[i]<<std::endl; // hiányzó sorvégi ; (értelmetlen kiírás lenne belőle, hiányzó érték adat?)
     }    
     std::cout << "Atlag szamitasa: " << std::endl;
-    int atlag;
-    for (int i = 0; i < N_ELEMENTS; i++) // , helyett ; szükséges a második paraméter után a for ciklusban
+    int atlag=0;
+    for (int i = 0; i <= N_ELEMENTS; i++) // , helyett ; szükséges a második paraméter után a for ciklusban
     {
         atlag += b[i]; //hiányzó ; a sor végéről
     }
